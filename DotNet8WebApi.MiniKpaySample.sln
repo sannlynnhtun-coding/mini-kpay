@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet8WebApi.MiniKpaySample", "DotNet8WebApi.MiniKpaySample\DotNet8WebApi.MiniKpaySample.csproj", "{3A069307-D1EC-4C56-9F1B-36EAC98FF4B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet8WebApi.MiniKpaySample", "DotNet8WebApi.MiniKpaySample\DotNet8WebApi.MiniKpaySample.csproj", "{3A069307-D1EC-4C56-9F1B-36EAC98FF4B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{B4EA9663-095F-465A-AFF8-0025D5F654F5}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		sample.png = sample.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,5 +1,7 @@
 # DotNet8WebApi.MiniKpaySample
 
+![alter](sample.png)
+
 In the DotNet8WebApi.MiniKpaySample project, a common pattern used is the **Result Pattern**. This pattern is used to handle and encapsulate the outcomes of operations, particularly in scenarios involving potential errors or exceptional conditions. It typically involves:
 
 - **Result Object:** Encapsulates the success or failure state of an operation.
