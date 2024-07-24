@@ -33,8 +33,8 @@ public class TransactionHistoryController : ControllerBase
         }
     }
 
-    [HttpPost("Datetime")]
-    public async Task<IActionResult> TransactionDateHistory(TransactionHistoryDateRequestModel requestModel)
+    [HttpPost("ByDate")]
+    public async Task<IActionResult> TransactionHistoryByDate(TransactionHistoryDateRequestModel requestModel)
     {
         try
         {
