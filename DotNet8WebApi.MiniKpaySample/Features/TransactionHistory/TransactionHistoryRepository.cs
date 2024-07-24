@@ -33,6 +33,7 @@ public class TransactionHistoryRepository
             CommonQuery.TransactionHistoryByDatetime, new { TransactionDate = datetime });
         return item is not null;
     }
+
     public async Task<List<CustomerTransactionHistoryModel>> TransactionHistoryByDatetime(string transactionDate)
     {
         var strDate = transactionDate;
@@ -44,33 +45,4 @@ public class TransactionHistoryRepository
             .ToList();
         return lst;
     }
-
-    //public async Task<List<CustomerTransactionHistoryModel>> GenerateTransactionHistory(int count)
-    //{
-    //    var model = new List<CustomerTransactionHistoryModel>();
-    //    var random = new Random();
-
-    //    for (int i = 0; i < count; i++)
-    //    {
-    //        var item = new CustomerTransactionHistoryModel
-    //        {
-    //            FromMobileNo = GenerateRandomMobileNumber(random),
-    //            ToMobileNo = GenerateRandomMobileNumber(random),
-    //            TransactionDate = DateTime.UtcNow.AddDays(-random.Next(0, 365)),
-    //            Amount = (decimal)(random.NextDouble() * 1000)
-    //        };
-    //        model.Add(item);
-    //    }
-
-    //    foreach (var item in model)
-    //    {
-    //        await _db.ExecuteAsync(CommonQuery.InsertTransactionHistory, item);
-    //    }
-    //    return model;
-    //}
-
-    //private string GenerateRandomMobileNumber(Random random)
-    //{
-    //    return "09" + random.Next(100000000, 999999999).ToString();
-    //}
 }
